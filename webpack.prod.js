@@ -3,11 +3,12 @@ const common = require("./webpack.common");
 const { merge } = require("webpack-merge");
 const MiniCSSExtractPlugin = require("mini-css-extract-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
+const TerserPlugin = require("terser-webpack-plugin");
 
 module.exports = merge(common, {
   mode: "production",
   output: {
-    filename: "[name].[fullhash].js",
+    filename: "assets/js/[name].[fullhash].js",
     path: path.resolve(__dirname, "dist"),
     clean: true,
   },
@@ -15,7 +16,7 @@ module.exports = merge(common, {
     // Memisahkan CSS dengan Javascript
 
     new MiniCSSExtractPlugin({
-      filename: "[name].[fullhash].css",
+      filename: "assets/css/[name].[fullhash].css",
     }),
   ],
   module: {
@@ -41,7 +42,8 @@ module.exports = merge(common, {
     ],
   },
   optimization: {
-    minimizer: [new CssMinimizerPlugin()],
+    minimize: true,
+    minimizer: [new CssMinimizerPlugin(), new TerserPlugin()],
     splitChunks: {
       chunks: "all",
       minSize: 20000,
