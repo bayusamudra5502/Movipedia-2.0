@@ -1,6 +1,8 @@
 # Movipedia 2.0
 
-Versi ini merupakan movipedia terbaru dengan memanfaatkan typescript.
+![Gambar Halaman Awal](docs/ss.png)
+
+Versi ini merupakan movipedia terbaru dengan memanfaatkan typescript. Live daro repo ini dapat anda lihat di [https://bayusamudra.my.id/Movipedia-2.0/](https://bayusamudra.my.id/Movipedia-2.0/).
 
 ## Cara Build
 
