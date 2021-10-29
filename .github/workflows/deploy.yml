@@ -8,7 +8,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     env:
-      API_TOKEN: ${{ secrets.API_TOKKEN }}
+      API_TOKEN: ${{ secrets.API_TOKEN }}
     steps:
       - uses: actions/checkout@v2
       - name: Menginstall Depedencies
