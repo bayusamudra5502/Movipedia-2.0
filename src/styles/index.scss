@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+
+@import "~bootstrap/scss/bootstrap";
+
+@import "constants";
+@import "components/header";
+@import "components/jumbotron";
+@import "components/search";
+@import "components/loading";
+@import "components/nodata";
+@import "components/search_result";
+@import "components/popular";
+
+body {
+  background-color: #1f1f1f;
+  color: $text-default;
+}

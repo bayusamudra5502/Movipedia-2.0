@@ -1,1 +1,3 @@
-console.log("Halo, Dunia");
+import App from "./App";
+
+document.getElementById("app").appendChild(new App());

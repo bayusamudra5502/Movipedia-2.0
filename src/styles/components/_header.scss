@@ -1,0 +1,23 @@
+header {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  font-size: 1.1rem;
+
+  a {
+    text-decoration: none;
+    color: $text-default;
+    transition: color 150ms ease-in-out;
+  }
+
+  a:hover {
+    color: $text-hover;
+  }
+
+  img {
+    height: 42px;
+    display: block;
+    margin-right: 10px;
+  }
+}

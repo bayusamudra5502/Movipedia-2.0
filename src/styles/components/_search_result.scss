@@ -1,0 +1,52 @@
+.search-result {
+  margin-top: 25px;
+}
+
+.card {
+  background-color: #35393b;
+  color: $text-default;
+  margin-bottom: 20px;
+  break-inside: avoid;
+
+  * {
+    background-color: transparent;
+    color: $text-default;
+  }
+
+  a {
+    color: #2a9d8f;
+    text-decoration: none;
+
+    &:hover {
+      color: #287068;
+    }
+  }
+}
+
+.card-columns {
+  @include media-breakpoint-up(sm) {
+    column-count: 1;
+  }
+
+  @include media-breakpoint-up(md) {
+    column-count: 3;
+  }
+
+  @include media-breakpoint-up(lg) {
+    column-count: 4;
+  }
+}
+
+.modal-content {
+  background-color: #35393b;
+
+  * {
+    border: 0;
+  }
+
+  img {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+}

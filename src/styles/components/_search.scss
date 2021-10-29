@@ -1,0 +1,42 @@
+.search-bar {
+  input.form-input {
+    background-color: transparent;
+    width: 100%;
+    padding: 5px 15px;
+    border: 0;
+    outline: 0;
+    color: #fff;
+  }
+
+  button:focus {
+    box-shadow: none;
+  }
+
+  button:hover {
+    .icon-tabler-search {
+      stroke: rgb(201, 201, 201);
+    }
+  }
+
+  button:active {
+    .icon-tabler-search {
+      stroke: rgb(148, 148, 148);
+    }
+  }
+
+  .icon-tabler-search {
+    stroke: #fff;
+  }
+
+  .input-search-bar {
+    display: flex;
+  }
+
+  padding: 0;
+  border: 1.5px solid #fff;
+  border-radius: 5px;
+}
+
+.outer-search-bar {
+  padding: 0 10px;
+}

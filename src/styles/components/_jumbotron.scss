@@ -1,0 +1,26 @@
+.jumbotron {
+  height: 225px;
+  padding: 20px;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  margin-top: 20px;
+
+  .layer {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 60%);
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .content {
+    position: absolute;
+    bottom: 20px;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+}

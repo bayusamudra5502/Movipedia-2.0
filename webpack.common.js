@@ -1,5 +1,6 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
+const { EnvironmentPlugin } = require("webpack");
 
 module.exports = {
   entry: "./src/index.ts",
@@ -7,6 +8,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./public/index.html",
     }),
+    new EnvironmentPlugin(["API_TOKEN"]),
   ],
   module: {
     rules: [
@@ -43,6 +45,6 @@ module.exports = {
       "@style": path.resolve(__dirname, "src/scss"),
       "@": path.resolve(__dirname, "src/js"),
     },
-    extensions: [".ts", ".js"],
+    extensions: [".ts", ".js", ".tsx"],
   },
 };
